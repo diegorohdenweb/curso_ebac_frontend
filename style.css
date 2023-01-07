@@ -1,0 +1,40 @@
+.space_top_porcentagem {
+    padding-top: 10%;
+}
+
+.space_top {
+    padding-top: 20px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+button {
+    background: #00ff80;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    display: block;
+    width: 100%;
+}
+
+ul li a:active {
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.link_riscar {
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.limpar {display: none;}
