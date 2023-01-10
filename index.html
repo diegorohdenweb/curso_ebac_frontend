@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validação de campos</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <form>
+    <div class="grid-container space_top">
+      <div class="grid-x grid-padding-x">
+        <div class="medium-12 large-12 cell">
+          <h1>Preencha os campos abaixo</h1>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="medium-6 cell">
+
+          <label>
+            <input type="text" required placeholder="Digite seu nome completo">
+          </label>
+        </div>
+        <div class="medium-6 cell">
+          <label>
+            <input type="email" required placeholder="Email">
+          </label>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="medium-6 cell">
+          <label>
+            <input type="text" required placeholder="Telefone/Celular"  id="campo-telefone">
+          </label>
+        </div>
+        <div class="medium-6 cell">
+          <label>
+            <input type="text" required placeholder="CPF" id="campo-cpf">
+          </label>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="medium-6 cell">
+          <label>
+            <input type="text" required placeholder="CEP"   id="campo-cep">
+          </label>
+        </div>
+        <div class="medium-6 cell">
+          <label>
+            <input type="text" required placeholder="Endereço">
+          </label>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 medium-12 cell">
+          <label>
+            <input type="submit" class="button" value="Enviar">
+          </label>
+        </div>
+      </div>
+    </div>
+  </form>
+
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#campo-cpf').mask('000.000.000-00');
+      $('#campo-telefone').mask('(00) 00000-0000');
+      $('#campo-cep').mask('00000-000');
+    });
+  </script>
+</body>
+
+</html>
