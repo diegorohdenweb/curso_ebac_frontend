@@ -1,0 +1,56 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    .border-box();
+    font-family: @font-family;
+}
+
+body {
+    background-color: @background-color;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 56px 0;
+}
+
+.products {
+    margin-top: @product-margin-top;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+
+    li {
+        list-style: none;
+    }
+
+    img {
+        width: 100%;
+        border-radius: @border-radius;
+    }
+
+    .product-button {
+        display: block;
+        background-color: #colorsBox[backgroundColorBotao];
+        color: #colorsBox[textcolorBotao];
+        .text-center();
+        padding: @button-padding 0;
+        border-radius: @button-border-radius;
+        margin-top: @button-margin-top;
+        text-decoration: none;
+
+        &:hover {
+            background-color: @secondary-color-hover;
+        }
+    }
+
+
+}
